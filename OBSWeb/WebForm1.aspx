@@ -8,7 +8,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="background-color: #66CCFF">
+            Name&nbsp;
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Surname
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            City
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>London</asp:ListItem>
+                <asp:ListItem>Istanbul</asp:ListItem>
+                <asp:ListItem>Ankara</asp:ListItem>
+            </asp:DropDownList>
+
         </div>
     </form>
 </body>
