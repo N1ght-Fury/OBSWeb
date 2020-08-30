@@ -11,7 +11,9 @@ namespace OBSWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
+            Repeater1.DataSource = dt.OgrenciListesi();
+            Repeater1.DataBind();
         }
     }
 }
