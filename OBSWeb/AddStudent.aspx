@@ -36,50 +36,50 @@
     <br />
 
     <div>
-        <form action="/action_page.php">
+        <form id="Form1" runat="server">
             <div>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <asp:Label for="name" runat="server" type="text">Name</asp:Label>
+                <asp:TextBox ID="name" runat="server" placeholder="Your name.."></asp:TextBox>
             </div>
 
             <br />
 
             <div>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <asp:Label for="surname" runat="server" type="text">Surname</asp:Label>
+                <asp:TextBox ID="surname" runat="server" placeholder="Your last name.."></asp:TextBox>
             </div>
 
             <br />
 
             <div>
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" name="lastname" placeholder="Your phone number..">
+                <asp:Label for="phone" runat="server" type="text">Phone</asp:Label>
+                <asp:TextBox ID="phone" runat="server" placeholder="Your phone number.."></asp:TextBox>
             </div>
 
             <br />
 
             <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="lastname" placeholder="Your email..">
+                <asp:Label for="email" runat="server" type="text">Email</asp:Label>
+                <asp:TextBox ID="email" runat="server" placeholder="Your email.."></asp:TextBox>
             </div>
 
             <br />
 
             <div>
-                <label for="password">Password</label>
-                <input type="text" id="password" name="lastname" placeholder="Password..">
+                <asp:Label for="password" runat="server" type="text">Password</asp:Label>
+                <asp:TextBox ID="password" runat="server" placeholder="Password.."></asp:TextBox>
             </div>
 
             <br />
 
             <div>
-                <label for="photo">Photo</label>
-                <input type="text" id="photo" name="lastname" placeholder="Photo url..">
+                <asp:Label for="photo" runat="server" type="text">Photo</asp:Label>
+                <asp:TextBox ID="photo" runat="server" placeholder="Photo url.."></asp:TextBox>
             </div>
 
             <br />
 
-            <input type="submit" value="Submit">
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add Student"/>
         </form>
     </div>
 

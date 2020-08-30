@@ -13,5 +13,14 @@ namespace OBSWeb
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
+            dt.OgrenciEkle(name.Text, surname.Text, phone.Text, email.Text, password.Text, photo.Text);
+            Response.Redirect("Default.aspx");
+        }
+
+
     }
 }
