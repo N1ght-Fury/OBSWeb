@@ -11,6 +11,7 @@
             <th scope="col">Telefon</th>
             <th scope="col">Mail</th>
             <th scope="col">Şifre</th>
+            <th scope="col">İşlemler</th>
         </tr>
         <tbody>
             <%--<th scope="row">1</th>--%>
@@ -23,6 +24,10 @@
                         <td><%#Eval("OGRTELEFON")%></td>
                         <td><%#Eval("OGRMAIL")%></td>
                         <td><%#Eval("OGRSIFRE")%></td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/DeleteStudent.aspx?OGRID=" + Eval("OGRID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                        </td>
                     </tr>
 
                 </ItemTemplate>
