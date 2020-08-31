@@ -26,7 +26,7 @@
                         <td><%#Eval("OGRSIFRE")%></td>
                         <td>
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/DeleteStudent.aspx?OGRID=" + Eval("OGRID") %>' CssClass="btn btn-danger">Sil</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# "~/UpdateStudent.aspx?OGRID=" + Eval("OGRID") %>' CssClass="btn btn-success">Güncelle</asp:HyperLink>
                         </td>
                     </tr>
 
